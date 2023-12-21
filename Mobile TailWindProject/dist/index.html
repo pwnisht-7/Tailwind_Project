@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
+    <title>Document</title>
+</head>
+
+<body class=" text-3xl h-full max-w-screen-2xl">
+    <header class=" h-screen w-full">
+        <nav class="bg-white flex w-[90%] mx-auto justify-between items-center ">
+            <div><img src="./Images/Pwnisht(1).png" class="h-20" alt=""></div>
+            <div id="nav-links"
+                class="md:static md:min-h-fit absolute bg-white min-h-[16vh] flex items-center px-5 left-0 transition-all duration-300 top-[-100%] md:w-auto w-full">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-6 py-5 mx-auto">
+                    <li class=""><a class="text-xl hover:text-[#d0472f]" href="#">Home</a></li>
+                    <li class=""><a class="text-xl hover:text-[#d0472f]" href="#">Projects</a></li>
+                    <li class=""><a class="text-xl hover:text-[#d0472f]" href="#">Explore</a></li>
+                    <li class=""><a class="text-xl hover:text-[#d0472f]" href="#">About</a></li>
+                    <li class=""><a class="text-xl hover:text-[#d0472f]" href="#">Contact</a></li>
+                    <li class=""><a class="text-xl hover:text-[#d0472f]" href="#">Blogs</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-5">
+                <button
+                    class="px-3 py-1 items-center rounded-md text-white bg-[#f7765f] text-base hover:bg-[#d0472f]">Sign
+                    Up</button>
+                <ion-icon id="btn" name="menu-outline"
+                    class="text-3xl cursor-pointer md:hidden hover:text-[#f7765f]"></ion-icon>
+
+            </div>
+        </nav>
+        <div class="w-full">
+            <div class="flex flex-col-reverse md:w-full md:flex-row gap-10 items-center md:justify-between px-10">
+                <div class="md:w-3/5 md:h-screen flex items-center flex-col gap-5 md:gap-10 justify-center">
+                    <div class=" w-full md:gap-5 flex flex-col items-center justify-center">
+                        <h1 class="text-[#f77657] text-center font-bold text-base md:text-2xl">If You Can Dream, It We Can Make It</h1>
+                        <h1 class="text-xl text-[#213137] text-center md:text-4xl font-bold">Connecting People And Technology</h1>
+                    </div>
+                    <div>
+                        <p class="md:text-base text-justify text-[#213137] text-sm ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non sunt quos incidunt ratione
+                            placeat? Fugit, quaerat. Non, numquam illum eum amet hic quia veniam porro dicta. Sequi
+                            accusantium ipsa deserunt itaque autem delectus aliquam eligendi.</p>
+                    </div>
+                    <div class="w-full flex justify-evenly items-center gap-3 md:gap-36 md:flex-row flex-col">
+                        <button class="border-2 w-full border-[#f77657] md:text-2xl text-base px-5 py-2 rounded-md transition-all text-[#f77657] hover:bg-[#f77657] hover:text-white">Get Started</button>
+                        <button class=" border-2 w-full border-white bg-[#f77657] px-5 py-2 text-white rounded-md text-base md:text-2xl hover:border-[#f77657] hover:bg-white hover:text-[#f77657]">Explore</button>
+                    </div>
+                </div>
+                <div class="md:w-2/5 md:h-screen flex items-center justify-center">
+                    <div class="">
+                        <img src="./Images/5970189.jpg" class="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        const nav = document.querySelector('#nav-links');
+        const btn = document.querySelector('#btn');
+        btn.addEventListener('click', (e) => {
+            if (e.target.name === 'menu-outline') {
+                e.target.name = 'close';
+                nav.classList.add('top-[13%]');
+                nav.classList.remove('top-[-100%]');
+            }
+            else {
+                e.target.name = 'menu-outline';
+                nav.classList.add('top-[-100%]');
+                nav.classList.remove('top-[13%]');
+            }
+        })
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+
+</html>
